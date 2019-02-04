@@ -35,23 +35,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".kotlin.MainActivity" />
+
         <activity android:name=".java.MainActivity" />
-        <service
-            android:name=".kotlin.MyJobService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
-            </intent-filter>
-        </service>
-
-        <service android:name=".kotlin.MyFirebaseMessagingService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-
-        <!-- [START firebase_service] -->
+                <!-- [START firebase_service] -->
         <service android:name=".java.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
